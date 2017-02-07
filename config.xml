@@ -5,10 +5,10 @@
         id        = "com.moodle.moodlemobile"
         versionCode = "20160"
         version   = "3.2.0">
-    <name>Moodle Mobile</name>
+    <name>Safecity</name>
 
     <description>
-        Moodle Mobile official app
+        La città sicura
     </description>
 
     <author href="http://moodle.com" email="mobile@moodle.com">
@@ -33,7 +33,7 @@
 
     <allow-intent href="*" />
 
-    <preference name="phonegap-version" value="cli-6.3.0" />
+    <preference name="phonegap-version" value="cli-6.5.0" />
     <preference name="orientation"      value="default" />
     <preference name="target-device"    value="universal" />
     <preference name="fullscreen"       value="false" />
@@ -109,7 +109,11 @@
     <gap:splash src="resources/ios/splash/Default~iphone.png"             gap:platform="ios" width="320" height="480"/>
 
     <gap:plugin name="cordova-plugin-camera" source="npm" />
-    <gap:plugin name="cordova-plugin-media-capture" source="npm" />
+    <gap:plugin name="cordova-plugin-media-capture" source="npm">
+        <param name="CAMERA_USAGE_DESCRIPTION" value="We'd like to access your camera to let you take a photo"/>
+        <param name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="We'd like to access your photo library to let you pick a photo"/>
+        <param name="MICROPHONE_USAGE_DESCRIPTION" value="We'd like to access your microphone to let you record an audio"/>
+    </gap:plugin>
     <gap:plugin name="cordova-plugin-device" source="npm" />
     <gap:plugin name="cordova-plugin-file" source="npm" />
     <gap:plugin name="cordova-plugin-file-transfer" source="npm" />
@@ -119,8 +123,9 @@
     <gap:plugin name="cordova-plugin-statusbar" source="npm" version="2.1.2" />
     <gap:plugin name="cordova-plugin-whitelist" source="npm" />
     <gap:plugin name="cordova-plugin-splashscreen" source="npm" />
+    <gap:plugin name="cordova-universal-clipboard" source="npm" />
 
-    <gap:plugin name="phonegap-plugin-push" source="npm" version="1.7.0">
+    <gap:plugin name="phonegap-plugin-push" source="npm" version="1.9.2">
         <param name="SENDER_ID" value="694767596569" />
     </gap:plugin>
     <gap:plugin name="cordova-plugin-customurlscheme" source="npm">
