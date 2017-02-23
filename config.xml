@@ -2,7 +2,7 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         xmlns:android = "http://schemas.android.com/apk/res/android"
-        id        = "com.moodle.moodlemobile"
+        id        = "it.alternanzascuolalavoro.cfiformazione"
         versionCode = "20160"
         version   = "3.2.0">
     <name>Safecity</name>
@@ -11,8 +11,9 @@
         La città sicura
     </description>
 
-    <author href="http://moodle.com" email="mobile@moodle.com">
-        La città sicura
+    <author href="http://alternanzascuolalavoro.cfiformazione.it" email="cfiscuola@gmail.com">
+        
+CONSORZIO FERRARA INNOVAZIONE SOCIETA' CONSORTILE A RL
     </author>
 
     <gap:config-file platform="ios" parent="CFBundleShortVersionString">
